@@ -23,7 +23,7 @@ public class Util2 {
 public static UserDao login ( String email , String password) {
 		
 		Configuration cfg = new Configuration();
-		cfg.configure("hibernate.cfg.xml");
+		cfg.configure("hibernate.cfg.xml"); 
 		Session session = cfg.buildSessionFactory().getCurrentSession();
 		
 		session.beginTransaction();
